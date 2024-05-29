@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn{
+        @apply flex px-3 py-1 font-medium text-sm rounded bg-indigo-500 text-white;
+        &:hover, &:focus {
+           @apply bg-indigo-600;
+       }
+
+       &:focus{
+        @apply outline-none ring-1 ring-offset-1 ring-indigo-300;
+       }
+
+       &.btn-light{
+           @apply bg-indigo-100 text-indigo-500;
+           &:hover, &:active{
+               @apply bg-indigo-200;
+           }
+       }
+    }
+
+
+}
